@@ -96,8 +96,29 @@ Imprima o resultado em uma lista. Resultado: ["banana", "morango", "abacaxi"]
 
 =end
 
-texto = "banana#morango#abacaxi"
+# texto = "banana#morango#abacaxi"
 
-lista = texto.split("#")
+# lista = texto.split("#")
+
+# puts "#{lista}"
+
+
+
+=begin
+
+Exercício 6
+
+Considerando a variável abaixo:
+
+texto = "banana#morango#abacaxi!limao!mamao"
+
+Imprima o resultado em uma list. ResultadO: ["banana", "morango", "abacaxi", "limao", "mamao"]
+
+=end
+
+texto = "banana#morango#abacaxi!limao!mamao"
+
+lista = texto.split(/#|\!/)
 
 puts "#{lista}"
+
