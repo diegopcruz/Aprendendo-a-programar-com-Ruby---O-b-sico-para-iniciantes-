@@ -118,7 +118,6 @@ Imprima o resultado em uma list. ResultadO: ["banana", "morango", "abacaxi", "li
 
 texto = "banana#morango#abacaxi!limao!mamao"
 
-lista = texto.split(/#|\!/)
+lista = texto.split(/#|\!/) # Expressão Regular
 
-puts "#{lista}"
-
+puts "Resultado: #{lista}"
