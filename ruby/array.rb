@@ -39,11 +39,55 @@
 # puts exemplo[2][0] # 100
 # puts "#{exemplo[2][3][0]}" # 1000
 
-nomes = "Diego_Rafael_Lucas"
+# nomes = "Diego_Rafael_Lucas"
 
-lista_de_nomes = nomes.split("_")
-                 # ["Diego", "Rafael", "Lucas"
+# lista_de_nomes = nomes.split("_")
+#                  # ["Diego", "Rafael", "Lucas"
 
-puts lista_de_nomes[0]
-puts lista_de_nomes[1]
-puts lista_de_nomes[2]
+# puts lista_de_nomes[0]
+# puts lista_de_nomes[1]
+# puts lista_de_nomes[2]
+
+# **** Adicionar Array a lista ****
+
+exemplo = []
+puts exemplo[0] #nil
+exemplo[0] = "Rafael"
+puts "#{exemplo}" # ["Rafael"]
+
+exemplo[1] = 10
+exemplo[2] = "Roberto"
+puts "#{exemplo}" # ["Rafael", 10, "Roberto"]
+
+exemplo[0] = 50
+puts "#{exemplo}" # [50, 10, "Roberto"]
+
+exemplo = []
+exemplo << "Rafael"
+exemplo << "Roberto"
+exemplo << 2
+puts "#{exemplo}" # ["Rafael", "Roberto", 2]
+exemplo = ["a", "b"]
+# index     0    1
+
+exemplo[2] = "c"
+exemplo << "d"
+puts "#{exemplo}" # ["a", "b", "c", "d"]
+exemplo = ["a", "b"]
+# index     0    1
+
+exemplo << "c" # ["a", "b", "c"]
+exemplo[2] = "d"
+puts "#{exemplo}" # ["a", "b", "d"]
+exemplo = []
+exemplo << 10
+exemplo << ["Rafael"]
+puts "#{exemplo}" # [10, ["Rafael"]]
+            # index 0    1
+
+puts exemplo[1][0] #Rafael
+exemplo[1][1] = "Roberto"
+puts "#{exemplo[1]}" #["Rafael", "Roberto"]
+exemplo[1] << "Ronaldo"
+puts "#{exemplo[1]}" #["Rafael", "Roberto", "Ronaldo"]
+puts "#{exemplo}" # [10, ["Rafael", "Roberto", "Ronaldo"]]
